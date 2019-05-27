@@ -4,7 +4,7 @@
   "description": "## Table of Contents - [About](#about) - [Installation](#installation) - [Setup](#setup) - [Usage](#usage) - [Documentation](#documentation)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:javascript": "webpack --config=src/javascript/webpack.config.js"
   },
   "keywords": [],
   "author": "",
