@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test - JS - Web Components - TypeScript/JavaScript comparison</title>
+  </head>
+  <body>
+    <main role="main">
+      <my-simple-component></my-simple-component>
+      <my-complex-component></my-complex-component>
+    </main>
+    <script src="../dist/bundle.min.js"></script>
+    <script>
+      if (window.customElements) {
+        window.customElements.define('my-simple-component', window.__COMPONENTS__.SimpleComponent);
+        window.customElements.define('my-complex-component', window.__COMPONENTS__.ComplexComponent);
+      }
+    </script>
+  </body>
+</html>
+
+
