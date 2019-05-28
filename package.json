@@ -6,7 +6,8 @@
   "scripts": {
     "build:javascript": "NODE_ENV=production webpack --config=src/javascript/webpack.config.js",
     "build:javascript:dev": "NODE_ENV=development webpack --config=src/javascript/webpack.config.js",
-    "build:typescript": "webpack --config=src/typescript/webpack.config.js",
+    "build:typescript": "NODE_ENV=production webpack --config=src/typescript/webpack.config.js",
+    "build:typescript:dev": "NODE_ENV=development webpack --config=src/typescript/webpack.config.js",
     "transpile:typescript": "tsc --project src/typescript"
   },
   "keywords": [],
