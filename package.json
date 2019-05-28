@@ -4,7 +4,8 @@
   "description": "## Table of Contents - [About](#about) - [Installation](#installation) - [Setup](#setup) - [Usage](#usage) - [Documentation](#documentation)",
   "main": "index.js",
   "scripts": {
-    "build:javascript": "webpack --config=src/javascript/webpack.config.js",
+    "build:javascript": "NODE_ENV=production webpack --config=src/javascript/webpack.config.js",
+    "build:javascript:dev": "NODE_ENV=development webpack --config=src/javascript/webpack.config.js",
     "build:typescript": "webpack --config=src/typescript/webpack.config.js",
     "transpile:typescript": "tsc --project src/typescript"
   },
